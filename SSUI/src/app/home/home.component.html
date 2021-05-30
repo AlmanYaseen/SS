@@ -1,0 +1,34 @@
+<br />
+<div *ngIf="authService.isAuthenticated">
+  <img [src]="imageToShow" class="rounded-circle" style="width:200px" />
+  
+</div>
+
+
+<div *ngIf="!authService.isAuthenticated">
+  <h2 class="text-md-center bg-light">SS-Short Story </h2>
+</div>
+
+<div *ngIf="!authService.isAuthenticated" style="font-size:18px" class="container">
+  <!--<h2 class="text-primary">SS - Short Story <a class="btn btn-primary float-right" href="https://www.manzoorthetrainer.com/p/the-complete-angular-8-course-with-live-project-for-net-core-web-developers" target="_blank">Enroll Into The Course Now</a></h2>-->
+
+  <p style="color:black;">
+    This Web-based system is designed to allow you to share any of your experiences as a short story.
+    Short Story is a web portal where a user can share their personal short stories. Admin can approve or reject the story shared by the user and in each case an email is sent out to the user. Once the story is approved, it will be available on the portal for all the users to read it.
+  </p>
+  <p style="color:black;">
+    This is an n-tier Single Page Application (SPA) built on .Net platform using various technologies for various layers as given below
+  </p>
+  <!--<iframe width="800" height="500" src="https://www.youtube.com/embed/PYoGGTBpOY0?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+  <hr />
+  <h2 class="text-primary">Technologies</h2>
+  <ul style="color:black;">
+    <li><b>User Interface</b>: Angular9 and Bootstrap 4</li>
+    <li><b>Service Layer</b>: ASP.Net Core Web API</li>
+    <li><b>Business Logic Layer</b>: C#.Net Core</li>
+    <li><b>Data Access Layer</b>: Entity Framework Core Code First</li>
+    <li><b>Back End</b>: MS SQL Server 2017</li>
+    <li><b>Security</b>: Cookies and JWT</li>
+    <li><b>Tools</b>: Visual Studio 2019 and SQL Server Management Studio 2017</li>
+  </ul>
+</div>

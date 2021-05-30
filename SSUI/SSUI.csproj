@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="%2a%2a\**" />
+    <Content Remove="%2a%2a\**" />
+    <EmbeddedResource Remove="%2a%2a\**" />
+    <None Remove="%2a%2a\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="src\app\app.module.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="e2e\tsconfig.json" />
+    <Content Include="node_modules\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="node_modules\bootstrap\dist\css\bootstrap %286%29.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="e2e\protractor.conf.js" />
+    <None Include="e2e\src\app.e2e-spec.ts" />
+    <None Include="e2e\src\app.po.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\app.module.ts" />
+  </ItemGroup>
+
+</Project>
