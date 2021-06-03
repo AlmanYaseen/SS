@@ -58,7 +58,7 @@ export class PoststoriesComponent implements OnInit {
       }, err => {
         this.serverErrors = [];
 
-        if (err.Status === 400) {
+        if (err.status === 400) {
           Object.keys(err.error.errors).forEach(key => {
             this.serverErrors.push(err.error.errors[key][0]);
           });
@@ -84,7 +84,7 @@ export class PoststoriesComponent implements OnInit {
 
   public p: number;
   public stories: Story[] = [];
-  public approveStories: Story[] = [];
+  public approvedStories: Story[] = [];
   public pendingStories: Story[] = [];
 
   getStoriesByUserId(id: string) {
@@ -92,7 +92,7 @@ export class PoststoriesComponent implements OnInit {
     this.service.getStoriesByUserId(id).subscribe(res => {
       this.stories = res;
       console.log(res);
-      this.approveStories = this.stories.filter(x => x.isApproved === true);
+      this.approvedStories = this.stories.filter(x => x.isApproved === true);
       this.pendingStories = this.stories.filter(x => x.isApproved === false);
 
     });

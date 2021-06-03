@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { ChartsModule } from 'ng2-charts';
 
 
 import { AppComponent } from './app.component';
@@ -37,6 +38,7 @@ import { AccessdeniedComponent } from './accessdenied/accessdenied.component';
     RouterModule,
     FormsModule,
     LoadingBarHttpClientModule,
+    ChartsModule,
     AngularWebStorageModule
 
 
