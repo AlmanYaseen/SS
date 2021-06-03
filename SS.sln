@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SSAPI", "SSAPI\SSAPI.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SSUI", "SSUI\SSUI.csproj", "{271FF0F7-A3E9-4971-8C60-62AABD6F03DF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SSUIMain", "..\..\..\Unzip Files\SS\SSUI\SSUIMain.csproj", "{E09E6361-F6D8-4EA2-9656-FD8173E18F7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{271FF0F7-A3E9-4971-8C60-62AABD6F03DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{271FF0F7-A3E9-4971-8C60-62AABD6F03DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{271FF0F7-A3E9-4971-8C60-62AABD6F03DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E09E6361-F6D8-4EA2-9656-FD8173E18F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E09E6361-F6D8-4EA2-9656-FD8173E18F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E09E6361-F6D8-4EA2-9656-FD8173E18F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E09E6361-F6D8-4EA2-9656-FD8173E18F7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

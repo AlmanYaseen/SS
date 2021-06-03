@@ -3,8 +3,8 @@
 </div>
 
 <ul *ngIf="showFailureMsg" class=" alert alert-danger">
-  <li *ngFor="let serverErrors of error">
-    {{serverErrors}}
+  <li *ngFor="let error of serverErrors">
+    {{error}}
   </li>
 </ul>
 

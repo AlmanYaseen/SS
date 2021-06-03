@@ -6,7 +6,7 @@ import { LocalStorageService } from 'angular-web-storage';
   providedIn: 'root'
 })
 export class ApiServices {
-  baseUrl: string = "http://localhost:50000/api/stories";
+  baseUrl: string = "http://localhost:50000/api/Stories";
 
   constructor(private api: HttpClient, private localStorage: LocalStorageService) { }
 
@@ -34,5 +34,10 @@ export class ApiServices {
   getStoriesByUserId(id: string) {
     
     return this.api.get<Story[]>(this.baseUrl + "/getStoriesByUserId/" + id, { withCredentials: true });
+  }
+
+
+  getStories() {
+    return this.api.get<Story[]>(this.baseUrl, { withCredentials: true });
   }
 }

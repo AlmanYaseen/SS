@@ -42,6 +42,7 @@ export class RegisterComponent implements OnInit {
 
 
   register() {
+    
     this.formData.append('myModel', JSON.stringify(this.userRegistrationForm.value));
     this.authservice.register(this.formData).subscribe(res => {
       this.successMsg = "Registered Successfully";

@@ -1,5 +1,8 @@
 <div class="container">
   <br />
+  <button (click)="downloadCSV()" class="btn btn-outline-primary float-end">Download As CSV</button>
+
+  <br />
   <div class="form-group">
     <input type="text" placeholder="Enter to search" [(ngModel)]="search" class="form-control" />
   </div>
@@ -21,7 +24,7 @@
       <div class="card-header bg-primary"> <b>{{story.ssTitle}}</b></div>
       <div class="card-body">
         <p class="card-text">{{story.ssDescription}}</p>
-       <button class="btn-primary" (click)="like(story)">Like{{story.like}}</button>
+        <button class="btn-primary" (click)="like(story)">Like{{story.like}}</button>
 
       </div>
     </div>
